@@ -1,0 +1,561 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 105%;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  height: 60px;
+  width: auto;
+  background: #901b13;
+  text-align: center;
+  padding-left: 20%;
+  padding-top: 1.5%;
+  border-bottom: 4px solid #b7362f;
+}
+
+.navbarBtn {
+  text-decoration: none;
+  color: white;
+  font-size: 125%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s, color 0.5s;
+}
+
+.navbarBtn:hover {
+  color: #F29F00;
+  background-size: 100% 100%;
+}
+
+.navbarBtnActu {
+  background-size: 100% 100%;
+}
+
+.navbarContainer {
+  float: left;
+  font-size: 150%;
+}
+
+.navbarHome:hover {
+  background-size: 100% 100%;
+}
+
+/* Foother */
+.page-foother {
+  height: 40px;
+  width: auto;
+  background-color: #901b13;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: none;
+}
+
+.foother-copyright {
+  color: white;
+  font-size: 0.8em;
+}
+
+#title_foother {
+  color: #F29F00;
+}
+
+.join_button {
+  text-decoration: none;
+  color: white;
+}
+
+#btn {
+  background: #222;
+  height: 50px;
+  min-width: 350px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 40px;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  color: white;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 350px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+
+.join_button_post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbardown {
+  padding-top: 1%;
+}
+
+/* Dropdown */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 6px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(144, 27, 19, 0.72);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 30px 16px;
+  z-index: 1;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: background-size .5s;
+  background-size: 100% 100%;
+  background: rgba(144, 27, 19, 0.72);
+}
+
+.dropdowntexte {
+  text-decoration: none;
+  color: white;
+  font-size: 80%;
+  text-decoration: underline white;
+}
+
+/* Inscription page */
+.sign_up {
+  background-image: url("https://cdn.discordapp.com/attachments/577223034642104334/863822193791467520/bg.png");
+  height: 845px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.container_sign_up {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  padding-top: 14%;
+}
+
+.sign_up_title {
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  border-bottom: solid 3px #fff;
+}
+
+.input_sign_up {
+  text-align: center;
+  background: none;
+  border: 0;
+  outline: none;
+  color: white;
+  border-bottom: solid 2px #fff;
+}
+
+.input_sign_up::placeholder {
+  opacity: 1;
+}
+
+.input_sign_up_container {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+.sign_up_button_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.snign_up_button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.snign_up_button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/* fassade - home page */
+.fassade {
+  background-image: url("https://cdn.discordapp.com/attachments/577223034642104334/863822149949194300/background.png");
+  height: 500px;
+  background-position: center;
+  background-color: lightgray;
+  position: relative;
+}
+
+.fassade_contain {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-30%, -50%);
+}
+
+.fassade_text {
+  font-family: montserrat, sans-serif;
+  color: white;
+  font-size: 2.2em;
+  text-shadow: 3px 2px 1px black;
+  line-height: 1.5em;
+}
+
+#title_fassade_text_bis {
+  color: #F29F00;
+}
+
+#title_fassade_text {
+  color: red;
+}
+
+#title_fassade_text, #title_fassade_text_bis {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+/* bando nb joueur - rejoindre - discord  */
+.containerBar {
+  height: 90px;
+  width: auto;
+  background: #901b13;
+  border-bottom: 4px solid #b7362f;
+  color: white;
+  text-decoration: none;
+  font-size: 200%;
+  text-align: center;
+  padding-right: 5.5%;
+}
+
+.rejoin_button {
+  width: 200px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 25px;
+}
+
+.rejoin_button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.rejoin_button_container {
+  display: inline-block;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.1%;
+}
+
+.nb_connected {
+  font-size: 0.6em;
+  display: inline-block;
+}
+
+.discord_button {
+  display: inline-block;
+  font-size: 0.6em;
+}
+
+/* Information */
+.presentation_container {
+  background-image: url('https://cdn.discordapp.com/attachments/577223034642104334/863822125843742750/info_bg.png');
+  height: 500px;
+  padding-top: 40px;
+  text-align: center;
+  background-position: center;
+}
+
+/* presentation */
+.presentation_contain {
+  font-family: montserrat, sans-serif;
+  height: 83%;
+  width: 16em;
+  background-color: #21252B;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 30px;
+  border: solid 5px rgb(86, 142, 253);
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.horizontal_line {
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid #fff;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.presentation_container_img {
+  width: 200px;
+  padding: 30px;
+}
+
+.presentation_desciption_bis {
+  padding-top: 15px;
+}
+
+/* Error message */
+.error_container {
+  width: 700px;
+  height: 50px;
+  float: left;
+  background-color: #21252B;
+  border: solid 5px rgb(86, 142, 253);
+  text-align: center;
+  margin-top: 5%;
+  border-radius: 50px;
+  padding-top: 25px;
+  margin-left: 31.5%;
+}
+
+#error_text {
+  color: white;
+}
+
+/* profil page */
+.principal_bg {
+  background-image: url("https://cdn.discordapp.com/attachments/577223034642104334/863822193791467520/bg.png");
+  height: 1080px;
+  background-position: center;
+}
+
+.profil_container {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+
+.title_profil {
+  font-size: 40px;
+  color: #fff;
+  border-bottom: solid 3px #fff;
+  text-align: center;
+  max-width: 7em;
+  margin-left: 42.5%;
+}
+
+.profil_contain {
+  padding-top: 2%;
+  padding-left: 39%;
+}
+
+.modif_password_container {
+  padding-top: 2%;
+  padding-left: 40.5%;
+  font-size: 1.5em;
+}
+
+#modif_pass_button {
+  padding-top: 2%;
+  padding-left: 10%;
+}
+
+.container_reglement {
+  color: white;
+  text-shadow: 2px 1px 1px black;
+  padding-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70em
+}
+
+.title_reglement, .title_para_reglement {
+  text-decoration: underline;
+  font-size: 150%;
+}
+
+/* magasin */
+.article_container {
+  padding: 2%;
+  text-align: center;
+}
+
+.article_contain {
+  font-family: montserrat, sans-serif;
+  height: 425px;
+  width: 300px;
+  background-color: #21252B;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 30px;
+  border: solid 5px rgb(86, 142, 253);
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  margin: 1%;
+}
+
+.article_picture {
+  width: 200px;
+  padding: 30px;
+}
+
+.article_title {}
+
+.article_info {
+  padding-top: 3%;
+}
+
+.article_info, .article_title {
+  max-width: 96%;
+  padding-left: 2%;
+  color: white;
+}
+
+/* article select */
+.contain_article {
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  padding-left: 1em;
+}
+
+.contain_info_article {
+  text-align: left;
+  margin: auto;
+  padding-top: 3%;
+  font-size: 1em;
+}
+
+.picture_article {
+  width: 300px;
+}
+
+.buy_article_button {
+  padding-top: 3%;
+}
+
+.delete_account_container{
+  text-align: center;
+  padding-top: 3em;
+}
+
+#title_delete_account {
+  font-size: 40px;
+  color: #fff;
+  border-bottom: solid 3px #fff;
+  text-align: center;
+  max-width: 11em;
+  margin-left: 38%;
+}
+
+#delete_btn{
+  margin-top: 1.5em;
+  width: 24em;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#delete_btn:hover{
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
